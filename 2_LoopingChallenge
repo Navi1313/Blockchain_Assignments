@@ -1,0 +1,48 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.25;
+
+contract looping {
+
+    // function forWhileLoops() external pure returns(uint){
+    //     uint sum = 0 ;
+    //     for(uint i=0 ; i<1002; i++){
+    //         if(i==3){
+    //             continue;
+    //         }else{
+    //             sum +=i;
+    //         }
+    //     }
+    //     uint add = 0;
+    //     uint j = 0 ;
+    //     while(j<10){
+    //         add += j ;
+    //     }
+    //     return sum;
+    // }
+    
+    //challenge, do a simple operation, and run it in 1000 loops.
+    function forLoop(uint _n) external pure returns(uint){
+        uint s ;
+
+        for(uint i = 0 ; i<_n ; i++){
+            s += i ;
+        }
+        return s;
+    }
+
+    // function sqrt(uint n) external pure returns(uint){
+    //     // Method 1 : Brute Force :
+    //     uint i = 2;
+    //     uint b ;
+    //     while(i <= n/2 )
+    //     {
+    //         if(n/i <= i )
+    //         {
+    //             b= n/i;
+    //             break;
+    //         }
+    //         i++;
+    //     }
+    //     return b;
+    // }
+}
