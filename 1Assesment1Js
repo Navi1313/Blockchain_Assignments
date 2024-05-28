@@ -68,3 +68,6 @@ mintNFT("Ferrari F8" , "Red" , "W16 engine" , "380 kmph" , "1 million $")
 mintNFT("Aston Martin B45" , "Grey" , "563 engine" , "420 kmph" , "2 million $")
 listNFTs()
 getTotalSupply()
+
+
+
