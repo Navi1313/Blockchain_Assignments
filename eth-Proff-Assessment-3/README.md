@@ -17,7 +17,7 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension . 
 
 ```solidity
-// Function to mint tokens, only callable by the owner
+    // Function to mint tokens, only callable by the owner
     function mint(address _to, uint256 _amount) public onlyAdmin {
         _mint(_to, _amount);
     }
@@ -26,7 +26,11 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
     function burn(uint256 _amount) public {
         _burn(msg.sender, _amount);
     }
-}
+    // function that transfer the tokens from current account to the another :->
+    function transferTo(address _to, uint _val) public  {
+        _transfer(msg.sender, _to, _val);
+    }
+
 ```
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.24" (or another compatible version), and then click on the "Compile ethProffAssessment3.sol" button.
