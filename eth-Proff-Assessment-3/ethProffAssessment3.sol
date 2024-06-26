@@ -36,5 +36,10 @@ modifier onlyAdmin {
         _burn(msg.sender, _amount);
     }
 
+   // function that transfer the tokens from current account to the another :->
+    function transferTo(address _to, uint _val) public  {
+        _transfer(msg.sender, _to, _val);
+    }
+
 }
 
